@@ -10,9 +10,9 @@
     <Grid>
 		<StackPanel x:Name="stack">
 			<Label Content="Power" Padding="10" Background="LightBlue" />
-			<TextBox Text="{Binding Actual.Power, UpdateSourceTrigger=Explicit}" Padding="10"/>
+			<TextBox Text="5" Padding="10"/>
 			<Label Content="Speed" Padding="10" Background="LightBlue" />
-			<TextBox Text="{Binding Actual.Speed, UpdateSourceTrigger=Explicit}" Padding="10"/>
+			<TextBox Text="10" Padding="10"/>
 			<Button Content="Save" Padding="10" Click="Button_Click"  />
 		</StackPanel>
     </Grid>
