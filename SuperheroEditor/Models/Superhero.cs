@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace SuperheroEditor.Models
 {
+    enum politics { jó, gonosz, semleges }
+
     public class Superhero
     {
         private string name;
         private int power;
         private int speed;
+        public politics politics { get; set; }
 
         public string Name
         {
@@ -26,6 +29,11 @@ namespace SuperheroEditor.Models
         {
             get { return speed; }
             set { speed = value; }
+        }
+        public politics Politics
+        {
+            get { return politics; }
+            set { politics = value; }
         }
     }
 }
