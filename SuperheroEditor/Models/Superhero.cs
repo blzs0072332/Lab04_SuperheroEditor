@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SuperheroEditor.Models
 {
-    enum politics { jó, gonosz, semleges }
+    public enum politics { jó, gonosz, semleges }
 
     public class Superhero
     {
