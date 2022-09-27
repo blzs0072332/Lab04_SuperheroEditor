@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace SuperheroEditor.ViewModels
 {
-    class SuperheroEditorViewModel
+    public class SuperheroEditorViewModel
     {
 
+        public SuperheroEditorViewModel()
+        {
+
+        }
     }
 }
