@@ -13,7 +13,7 @@ namespace SuperheroEditor.Models
         private string name;
         private int power;
         private int speed;
-        public politics politics { get; set; }
+        private politics politics { get; set; }
 
         public string Name
         {
