@@ -4,9 +4,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SuperheroEditor"
+		xmlns:sph="clr-namespace:SuperheroEditor.Models"
         mc:Ignorable="d"
-        Title="SuperheroEditor" Height="450" Width="800">
+        Title="SuperheroEditor" Height="222" Width="319">
     <Grid>
-        
+		<StackPanel x:Name="stack">
+			<Label Content="Power" Padding="10" Background="LightBlue" />
+			<TextBox Text="{Binding Actual.Power, UpdateSourceTrigger=Explicit}" Padding="10"/>
+			<Label Content="Speed" Padding="10" Background="LightBlue" />
+			<TextBox Text="{Binding Actual.Speed, UpdateSourceTrigger=Explicit}" Padding="10"/>
+			<Button Content="Save" Padding="10" Click="Button_Click"  />
+		</StackPanel>
     </Grid>
 </Window>
