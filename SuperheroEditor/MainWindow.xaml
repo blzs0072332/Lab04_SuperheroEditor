@@ -40,7 +40,7 @@
             </ListBox.ItemTemplate>
         </ListBox>
         <StackPanel Grid.Column="1" HorizontalAlignment="Stretch">
-            <Label Content="654" ContentStringFormat="Cost: {0}$" FontSize="14"/>
+            <Label Content="653" ContentStringFormat="Cost: {0}$" FontSize="14"/>
             <Button Content="Create new Superhero" Margin="5" FontSize="14"/>
             <Button Content="Remove Superhero" Margin="5" FontSize="14"/>
             <Button Content="Edit Superhero" Margin="5" FontSize="14"/>
