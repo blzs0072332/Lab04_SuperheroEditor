@@ -11,20 +11,15 @@ namespace SuperheroEditor.Helpers
 {
 	public class NumberToColorConvert : IValueConverter
 	{
-		public NumberToColorConvert()
-		{
-
-		}
-
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            throw new NotImplementedException();
+            double number = double.Parse(value.ToString());
+            if (number <= 3) { return Brushes.Red; }
+            else if (number <= 7) { return Brushes.Yellow; }
+            else { return Brushes.Green; }
         }
 
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            throw new NotImplementedException();
-        }
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) { return Binding.DoNothing; }
     }
 }
 
