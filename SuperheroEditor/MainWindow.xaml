@@ -12,7 +12,56 @@
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
-        
 
+        <ListBox Grid.Column="0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Black" BorderThickness="2">
+                        <Grid >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="1*"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Content="név" Margin="10"/>
+                            <Label Grid.Row="1" Grid.Column="0" Content="4" ContentStringFormat="Power: {0}" Margin="10"/>
+                            <Label Grid.Row="1" Grid.Column="1" Content="5" ContentStringFormat="Speed: {0}" Margin="10"/>
+                            <ProgressBar Grid.Row="2" Grid.Column="0" Value="4" Maximum="10" Margin="10"/>
+                            <ProgressBar Grid.Row="2" Grid.Column="1" Value="5" Maximum="10" Margin="10"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Stretch">
+            <Label Content="654" ContentStringFormat="Cost: {0}$" FontSize="14"/>
+            <Button Content="Create new Superhero" Margin="5" FontSize="14"/>
+            <Button Content="Remove Superhero" Margin="5" FontSize="14"/>
+            <Button Content="Edit Superhero" Margin="5" FontSize="14"/>
+            <Label Content="Superheroes in batle:" Margin="5" FontSize="14"/>
+            <Label Content="6" ContentStringFormat="Power: {0}" Margin="1" FontSize="14"/>
+            <ProgressBar Value="6" Maximum="10" Height="15" Margin="5"/>
+            <Label Content="4" ContentStringFormat="Speed: {0}" Margin="1" FontSize="14"/>
+            <ProgressBar Value="4" Maximum="10" Height="15" Margin="5"/>
+        </StackPanel>
+        <ListBox Grid.Column="2">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="név"/>
+                        <Label Content="power"/>
+                        <Label Content="speeed"/>
+                        <Label Content="In battle"/>
+                        <CheckBox />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>
